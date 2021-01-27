@@ -1,0 +1,14 @@
+Create virtual environment:
+===========================
+python -m venv venv
+
+Activate:
+=========
+.\venv\Scripts\Activate.ps1
+
+To be able to run activation some execution policy might need to be added:
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+If you want to disable the execution:
+Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
